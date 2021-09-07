@@ -31,7 +31,7 @@
 				color: #ebf8ff;
 				font-family: 'Josefin Sans', sans-serif;
 				font-size: 4rem;
-				border-right: solid 1.5rem #ebf8ff;
+				border-right: solid 1.5rem #4299e1;
 				padding-right: 0.25rem;
 				white-space: nowrap;
 				animation: animated-cursor 700ms steps(30, end) infinite;
@@ -46,16 +46,26 @@
 			}
 
 			p a {
-				color: #4299e1;
+				color: #ff2d2e;
 				text-decoration: none;
+				text-shadow: 0px 0px 10px #c63031;
+				animation: animated-glow 1400ms alternate ease-in-out infinite;
 			}
 
 			@keyframes animated-cursor {
 				from {
-					border-right-color: #ebf8ff;
+					border-right-color: #4299e1;
 				}
 				to {
 					border-right-color: transparent;
+				}
+			}
+			@keyframes animated-glow {
+				from {
+					text-shadow: 0px 0px 10px #c63031;
+				}
+				to {
+					text-shadow: none;
 				}
 			}
 		</style>
